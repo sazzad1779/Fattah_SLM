@@ -4,20 +4,20 @@
 ## Model Usage
 To load the models, you need install this package:
 
-```
+```bash
 pip install -e .
 ```
 
 Then you can load the model with the following code:
 
-```
-from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, AutoModelForSequenceClassification
-from jetmoe import JetMoEForCausalLM, JetMoEConfig, JetMoEForSequenceClassification
+```python 
+from src.Fattah import fattahModel, fattahForCausalLM, fattahConfig, fattahForSequenceClassification
+from transformers import AutoTokenizer, AutoModel,AutoModelForCausalLM, AutoConfig, AutoModelForSequenceClassification
 
-AutoConfig.register("jetmoe", JetMoEConfig)
-AutoModelForCausalLM.register(JetMoEConfig, JetMoEForCausalLM)
-AutoModelForSequenceClassification.register(JetMoEConfig, JetMoEForSequenceClassification)
+AutoConfig.register("jetmoe", fattahConfig)
+AutoModelForCausalLM.register(fattahConfig, fattahForCausalLM)
+AutoModelForSequenceClassification.register(fattahConfig, fattahForSequenceClassification)
 
-tokenizer = AutoTokenizer.from_pretrained('jetmoe/jetmoe-8b')
-model = AutoModelForCausalLM.from_pretrained('jetmoe/jetmoe-8b')
+tokenizer = AutoTokenizer.from_pretrained('sha1779/fattah')
+model = AutoModelForCausalLM.from_pretrained('sha1779/fattah')
 ```
