@@ -1,12 +1,12 @@
 # Fattah
+This is a Bengali small Language model with custom Transformer based decoder architecture.
+Here is the architecture of Fattah.
+![Fattah model architecture](doc/FAttah_architecture.png)
 
 ## Clone:
 ```bash
 git clone https://github.com/sazzad1779/Fattah_SLM.git
 ```
-
-
-
 ## Model Usage
 To load the models, you need install this package:
 
