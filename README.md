@@ -1,5 +1,11 @@
 # Fattah
 
+## Clone:
+```bash
+git clone https://github.com/sazzad1779/Fattah_SLM.git
+```
+
+
 
 ## Model Usage
 To load the models, you need install this package:
